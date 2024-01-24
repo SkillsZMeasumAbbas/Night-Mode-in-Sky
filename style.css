@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+}
+.topdiv1{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: black;
+  margin-top: 2px;
+}
+.topdiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: black;
+  margin-top: 47px;
+}
+.lod1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: calc(18deg * var(--i));
+}
+.lod1::before{
+  content: '';
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: aqua;
+  box-shadow: 0 0 10px green,
+              0 0 20px green,
+              0 0 40px green,
+              0 0 60px green,
+              0 0 80px green,
+              0 0 100px green;
+  animation: animate 30s linear infinite;
+}
+@keyframes animate {
+  0%{transform: scale(1);}
+  80%,100%{transform: scale(0);}
+}
+.container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  overflow: hidden;
+}
+.rioghtdiv1{
+  display: inline-block;
+}
+.loader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: animatebg 10s linear infinite;
+}
+@keyframes animatebg {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: calc(18deg * var(--i));
+}
+span::before{
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: aqua;
+  box-shadow: 0 0 10px green,
+              0 0 20px green,
+              0 0 40px green,
+              0 0 60px green,
+              0 0 80px green,
+              0 0 100px green;
+  animation: animate 30s linear infinite;
+}
+@keyframes animate {
+  0%{transform: scale(1);}
+  80%,100%{transform: scale(0);}
+}
+.sun{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-right: 100px;
+  background:repeating-radial-gradient(rgb(255, 225, 0), rgb(255, 174, 0));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: sun 30s 5s linear 1;
+}
+.eyes{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  animation: sun 30s 5s linear 1;
+}
+.righteye{
+  height: 20px;
+  width: 20px;
+  background-color: rgb(123, 122, 122);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: sun 30s 5s linear 1;
+}
+.righteye:hover{
+  background-color: white;
+}
+.lefteye:hover{
+  background-color: white;
+}
+.black{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  animation: sun 30s 5s linear 1;
+}
+.mouth{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  border-bottom: 6px solid #000;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid transparent;
+  animation: sun 30s 5s linear 1;
+}
+.mouth:hover{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  border-bottom: 6px solid #000;
+  background-color: black;
+  animation: sun 30s 5s linear 1;
+  
+
+}
+.lefteye{
+  height: 20px;
+  width: 20px;
+  background-color: rgb(123, 122, 122);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: sun 30s 5s linear 1;
+}
+.suns{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 100px;
+  background:repeating-radial-gradient(rgb(255, 225, 0), rgb(255, 174, 0));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: sun 20s 5s linear 1;
+}
+@keyframes sun {
+  0%{
+  }
+  25%{
+    margin-left: -5px;
+  }
+  50%{
+    margin-top: -5px;
+  }
+  75%{
+    margin-right: -5px;
+  }
+  100%{
+    margin-left: -5px;
+  }
+}
+.moon{
+  width: 170px;
+  height: 230px;
+  border-radius: 50%;
+  border-bottom: 15px solid aqua;
+  margin-left: 70px;
+}
+.didid{
+  margin-left: 70px;
+}
